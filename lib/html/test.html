@@ -36,11 +36,11 @@
       }
     };
 
-    elementPrototype.attributeChangeCallback = function(attr, old, new) 
+    elementPrototype.attributeChangeCallback = function(attr, oldVal, newVal) 
     {
       if(attr === "what")
       {
-        this.setWhat('what');
+        this.setWhat(newVal);
       }
     };
 
