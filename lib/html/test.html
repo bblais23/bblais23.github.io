@@ -1,0 +1,56 @@
+<template>
+  <h1> Testing <strong></strong>
+</template>
+
+<script>
+ (function(window, document, undefined)
+ {
+    //Importing document
+    var thatDoc = document;
+    var thisDoc = (thatDoc._currentScript || thatDoc.currentScript).ownerDocument;
+
+    var template = thisDoc.querySelector('template').content;
+
+    var elementPrototype = Object.create(HTMLElement.prototype);
+
+    elementPrototype.who = "something";
+
+    elementPrototype.createdCallback = function()
+    {
+      var shadowRoot = this.createShadowRoot();
+      var clone = thatDoc.importNode(template, true);
+      shadowRoot.appendChild(clone);
+
+      //Get the strong node
+      this.strong = shadowRoot.querySelector('strong');
+
+      //Check for what attribute
+      if(this.hasAttribute('what'))
+      {
+        var what = this.getAttribute('what');
+        this.setWhat(what);
+      }
+      else
+      {
+        this.setWhat(this.what);
+      }
+    };
+
+    elementPrototype.attributeChangeCallback = function(attr, old, new) 
+    {
+      if(attr === "what")
+      {
+        this.setWhat('what');
+      }
+    };
+
+    elementPrototype.setWhat = function(value)
+    {
+      this.what = value;
+
+      this.strong.textContent = this.what;
+    };
+
+    window.TestElement = thatDoc.registerElement('test-block', {prototype : elementPrototype});
+ })(window, document)
+ </script>
