@@ -1,0 +1,58 @@
+  /* Fullpage styling*/
+  html, body
+  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #31342b;
+  }
+
+  a, p, h1
+  {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  menu-bar
+  {
+    --background: #4d4d4d;
+    --accent: #FFF;
+  }
+
+  .mainContent
+  {
+    color: #e6e6e6;
+    text-align: center;
+    overflow: auto;
+    height: calc(100% - 1cm)
+  }
+
+  .mainContent p
+  {
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+
+  @media only screen and (min-width: 700px)
+  {
+
+    body
+    {
+      background-image: url("../images/background_3.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+
+    menu-bar
+    {
+      --background: rgba(255,255,255, 0.3);
+    }
+
+    .mainContent
+    {
+      text-align: left;
+      overflow: auto;
+      height: 100%;
+    }
+  }
