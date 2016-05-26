@@ -3,7 +3,7 @@
 </template>
 
 <script>
- (function(window, document, undefined)
+ ((window, document, undefined) =>
  {
     //Importing document
     var thatDoc = document;
@@ -13,7 +13,7 @@
 
     var elementPrototype = Object.create(HTMLElement.prototype);
 
-    elementPrototype.who = "something";
+    elementPrototype.what = "something";
 
     elementPrototype.createdCallback = function()
     {
