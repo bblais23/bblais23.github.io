@@ -32,6 +32,7 @@
 
   .topbar .menuButton div .burgerBar
   {
+    will-change: transform;
     background-color: var(--accent, #FFF);
     display: table-cell;
     transition: transform 0.25s linear;
@@ -97,6 +98,8 @@
     .topbar input:checked ~ .content
     {
       width: 60vw;
+      will-change: transform;
+      transition: width 0.5s;
     }
 
     .topbar input ~ .content
