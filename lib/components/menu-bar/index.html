@@ -1,0 +1,126 @@
+
+
+<template>
+  <style>
+
+  .topbar
+  {
+    display: block;
+    background: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+  }
+
+  .topbar input[type='checkbox']
+  {
+    display: none;
+  }
+
+  .topbar .menuButton
+  {
+    height: 1cm;
+    width: 1cm;
+    display: none;
+    padding: 5px;
+    border-spacing: 1.5mm;
+  }
+
+  .topbar .menuButton div
+  {
+    display: table-row;
+  }
+
+  .topbar .menuButton div .burgerBar
+  {
+    background-color: var(--accent, #FFF);
+    display: table-cell;
+    transition: transform 0.25s linear;
+  }
+
+  .content
+  {
+    width:300px;
+    background-color: var(--background, #F00);
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 2em;
+    float: left;
+  }
+
+  .content a
+  {
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .content *
+  {
+    display: block;
+    color: var(--accent, #FFF);
+    padding: 0.5em 0 0.5em 2em;
+    border-bottom: solid 2px var(--accent, #FFF);
+  }
+
+  .content *:last-child
+  {
+    border: none;
+  }
+
+  @media only screen and (max-width: 700px)
+  {
+    .topbar
+    {
+      position: relative;
+      background-color: var(--background, #F00);
+    }
+
+    /* Animate the hamburger menu*/
+
+    .topbar input:checked ~ .menuButton > div:first-child > .burgerBar
+    {
+      transform: translate(-3mm, 1.5mm) rotate(-45deg) scaleX(0.75);
+      transition: transform 0.25s linear;
+    }
+
+    .topbar input:checked ~ .menuButton > div:last-child > .burgerBar
+    {
+      transform:  translate(-3mm, -1.5mm) rotate(45deg) scaleX(0.75);
+      transition: transform 0.25s linear;
+    }
+
+    .topbar .menuButton
+    {
+      display: table;
+    }
+
+    .topbar input:checked ~ .content
+    {
+      width: 60vw;
+    }
+
+    .topbar input ~ .content
+    {
+      width: 0;
+      transition: width 0.5s;
+    }
+
+    .content
+    {
+      position: absolute;
+    }
+  }
+  </style>
+    <label class="topbar">
+      <input type="checkbox">
+      <div class="menuButton">
+        <div><div class="burgerBar"></div></div>
+        <div><div class="burgerBar"></div></div>
+        <div><div class="burgerBar"></div></div>
+      </div>
+      <div class="content">
+      </div>
+    </label>
+</template>
+
+<script src="js/main.js"></script>
+
