@@ -34,7 +34,7 @@
     text-align-last: left;
   }
 
-  @media only screen and (max-resolution: 192dpi)
+  @media not all and (min-resolution: 192dpi)
   {
 
     body
