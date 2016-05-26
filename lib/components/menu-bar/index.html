@@ -18,11 +18,11 @@
 
   .topbar .menuButton
   {
-    height: 120pt;
-    width: 120pt;
+    height: 50pt;
+    width: 60pt;
     display: none;
-    padding: 5px;
-    border-spacing: 20pt;
+    padding: 30pt;
+    border-spacing: 8pt;
   }
 
   .topbar .menuButton div
@@ -71,7 +71,7 @@
     .topbar
     {
       position: relative;
-      font-size: 45pt;
+      font-size: 35pt;
       background-color: var(--background, #F00);
     }
 
@@ -79,13 +79,13 @@
 
     .topbar input:checked ~ .menuButton > div:first-child > .burgerBar
     {
-      transform: translate(-32pt, 16pt) rotate(-45deg) scaleX(0.75);
+      transform: translate(-11pt, 4pt) rotate(-45deg) scaleX(0.75);
       transition: transform 0.25s linear;
     }
 
     .topbar input:checked ~ .menuButton > div:last-child > .burgerBar
     {
-      transform:  translate(-32pt, -16pt) rotate(45deg) scaleX(0.75);
+      transform:  translate(-11pt, -4pt) rotate(45deg) scaleX(0.75);
       transition: transform 0.25s linear;
     }
 
@@ -108,11 +108,6 @@
     .content
     {
       position: absolute;
-    }
-
-    .content *
-    {
-      padding: 0.5em 0 0.5em 0.5em;
     }
   }
   </style>
