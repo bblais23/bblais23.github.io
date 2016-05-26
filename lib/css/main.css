@@ -7,6 +7,9 @@
     height: 100%;
     overflow: hidden;
     background-color: #31342b;
+    background-image: url("../images/background_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 
   a, p, h1
@@ -40,8 +43,6 @@
     body
     {
       background-image: url("../images/background_3.jpg");
-      background-repeat: no-repeat;
-      background-position: center bottom;
     }
 
     menu-bar
