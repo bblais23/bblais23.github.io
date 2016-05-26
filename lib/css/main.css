@@ -25,7 +25,7 @@
     color: #e6e6e6;
     text-align: center;
     overflow: auto;
-    height: calc(100% - 1cm)
+    height: calc(100% - 120pt)
   }
 
   .mainContent p
