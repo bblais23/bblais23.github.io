@@ -31,10 +31,18 @@
     text-align-last: left;
   }
 
-  menu-bar
+  menu-bar,
+  box-content,
+  article-content
   {
     --background: #4d4d4d;
     --accent: #FFF;
+  }
+
+  article-content
+  {
+    --background: #FFF;
+    --accent: #333;
   }
 
   @media only screen and (min-device-width: 900px)
@@ -45,9 +53,12 @@
       background-image: url("../images/background_3.jpg");
     }
 
-    menu-bar
+    menu-bar,
+    box-content,
+    article-content
     {
       --background: rgba(255,255,255, 0.3);
+      --accent: #FFF;
     }
 
     .mainContent
