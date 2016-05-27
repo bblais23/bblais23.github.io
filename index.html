@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
  <head>
-
+  <base href="">
   <title>Ben Blais - Software Engineer</title>
 
   <script src="lib/js/polyfills/webcomponents.min.js"></script>
-  <link rel="import" href="lib/components/menu-bar/index.html">
-  <link rel="import" href="lib/components/article-content/index.html">
-  <link rel="import" href="lib/components/twitter-socal-button/index.html">
-  <link rel="import" href="lib/components/github-socal-button/index.html">
-  <link rel="import" href="lib/components/profile-box/index.html">
+
   <link rel="stylesheet" type="text/css" href="lib/css/main.css">
+
+  <script type="text/javascript" src="lib/components/content-partial/main.js"></script>
  </head>
- <body style="">
-     <menu-bar>
-      <profile-box src="lib/images/profile_pic.jpg" title="Benjamin Blais" subtitle="Web Developer"></profile-box>
-      <twitter-socal-button handle="firegod23"></twitter-socal-button>
-      <github-socal-button handle="bblais23"></github-socal-button>
-     </menu-bar>
+ <body>
+      <!-- Pseudo template: do not want to rewrite links -->
+     <content-partial href="lib/partials/link-bar.html"></content-partial>
      <div class="mainContent" style="">
       <article-content>
        <h1>Welcome</h1>
        <p>Greetings, and welcome to my website. I am Ben Blais, a web developer currently working for Progress Software. I developed this website as a way for me to both showcase my abilities as a developers as well as give me something to do in my free time.</p>
 
        <p>Here you will find several of my personal coding projects, some of them have not been updated since their creation, back when I was in college, so please be kind. All the source code for my projects can be found on GitHub so feel free to fork and modify to your liking.</p>
+
       </article-content>
      </div>
  </body>

@@ -17,12 +17,6 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
-  menu-bar
-  {
-    --background: #4d4d4d;
-    --accent: #FFF;
-  }
-
   .mainContent
   {
     color: #e6e6e6;
@@ -35,6 +29,12 @@
   {
     -moz-text-align-last: left;
     text-align-last: left;
+  }
+
+  menu-bar
+  {
+    --background: #4d4d4d;
+    --accent: #FFF;
   }
 
   @media only screen and (min-device-width: 900px)
