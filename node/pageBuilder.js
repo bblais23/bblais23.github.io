@@ -82,7 +82,7 @@ while(stack.length > 0)
 //Create the output dirs
 for(let index = 0; index < partialList.length; ++index)
 {
-  let outputValue = partialList[index].replace(partialPath, outputDirArg);
+  let outputValue = path.normalize(partialList[index].replace(partialPath, outputDirArg));
 
   outList[index] = outputValue;
   try
@@ -98,6 +98,6 @@ for(let index = 0; index < partialList.length; ++index)
   }
 }
 
-((template, partials, output) => {
-  htmlTemplatize.templatize(template, partials, output);
-})(templateArg, partialList, outList);
+((template, partials, output, ctx) => {
+  htmlTemplatize.templatize(template, partials, output, ctx);
+})(templateArg, partialList, outList, {outputBase : outputDirArg, partialBase : partialPath});

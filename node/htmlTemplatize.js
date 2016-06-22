@@ -17,6 +17,19 @@ var internalCommands = {};
 
 internalConfig.encoding = 'UTF-8';
 
+
+var copyContext = function(context)
+{
+  var ret = {};
+  var prop;
+  for(prop in context)
+  {
+    ret[prop] = context[prop];
+  }
+
+  return ret;
+}
+
 internalCommands.body = function(context)
 {
   if(!context.partial)
@@ -29,12 +42,32 @@ internalCommands.body = function(context)
   let contextPartial = {};
   contextPartial.template = bodyText;
   contextPartial.templatePath = context.partialPath;
+  contextPartial.parial = undefined;
   return templatizeInternal(contextPartial);
 }
 
-internalCommands.testwrite = function(context)
+internalCommands.generateBase = function(context)
 {
-  return "<p>TEST STRING</p>";
+  //TODO For now only support in templates
+  if(!context.partial)
+  {
+    throw "generateBase can only be called in the template";
+  }
+
+  //Get the out path
+  let outputPath = path.dirname(path.normalize(context.outputPath));
+  console.log(outputPath);
+
+  //Get the output base
+  let outputBase = path.normalize(context.outputBase);
+
+  //Create the relative path and make sure the path is html friendly.
+  let resultBase = path.relative(outputPath, outputBase);
+  resultBase = resultBase.replace(/\\/g, "/");
+  resultBase = resultBase.length > 0 ? resultBase + "/" : resultBase;
+
+  return resultBase;
+
 }
 
 internalCommands.include = function(context, args)
@@ -75,18 +108,6 @@ internalCommands.include = function(context, args)
   return includeContent;
 };
 
-var copyContext = function(context)
-{
-  var ret = {};
-  var prop;
-  for(prop in context)
-  {
-    ret[prop] = context[prop];
-  }
-
-  return ret;
-}
-
 //Both are strings, can do file reading later
 var templatizeInternal = function(context) 
 {
@@ -111,9 +132,9 @@ var templatizeInternal = function(context)
   return result;
 };
 
-module.exports.templatize = function(arg1, arg2, output){
+module.exports.templatize = function(arg1, arg2, output, contextArg){
   //First check to see if we are dealing with text or a path
-  var context = {};
+  var context = contextArg || {};
   var partials;
 
   //Only run this function if both arguments are present.
@@ -145,7 +166,7 @@ module.exports.templatize = function(arg1, arg2, output){
     }
     else
     {
-      ctx.outputPath = output + path.sep + path.basename(partial);
+      ctx.outputPath = path.normalize(output + path.sep + path.basename(partial));
     }
 
     ((ctx_internal) => {
