@@ -43,7 +43,7 @@
     --background: #4d4d4d;
     --accent: #FFF;
   }
-  @media only screen and (min-device-width: 900px)
+  @media all and (min-device-width: 900px)
   {
 
     body
