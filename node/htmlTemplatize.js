@@ -19,7 +19,22 @@ internalConfig.encoding = 'UTF-8';
 
 internalCommands.body = function(context)
 {
-  return context.partial;
+  if(!context.partial)
+  {
+    throw "Body can only be called in the template";
+  }
+
+  let bodyText = context.partial;
+
+  let contextPartial = {};
+  contextPartial.template = bodyText;
+  contextPartial.templatePath = context.partialPath;
+  return templatizeInternal(contextPartial);
+}
+
+internalCommands.testwrite = function(context)
+{
+  return "<p>TEST STRING</p>";
 }
 
 internalCommands.include = function(context, args)
@@ -49,6 +64,13 @@ internalCommands.include = function(context, args)
 
   //Read in the file (assume utf-8 encoding because FUCK EVERYTHING!)
   includeContent = fs.readFileSync(includePath, {encoding : internalConfig.encoding});
+
+  //Templateize include content
+  let includeContext = {};
+  includeContext.template = includeContent;
+  includeContext.templatePath = includePath;
+
+  includeContent = templatizeInternal(includeContext);
 
   return includeContent;
 };

@@ -61,7 +61,6 @@ while(stack.length > 0)
 
   if(info.isFile())
   {
-    console.log(value);
     partialList.push(value);
   }
   else
@@ -86,9 +85,6 @@ for(let index = 0; index < partialList.length; ++index)
   let outputValue = partialList[index].replace(partialPath, outputDirArg);
 
   outList[index] = outputValue;
-
-  //Make the dir, catching 
-  console.log(path.dirname(outputValue));
   try
   {
     fs.mkdirParentSync(path.dirname(outputValue));
