@@ -101,13 +101,14 @@
     .topbar input:checked ~ .content
     {
       width: 60vw;
-      will-change: transform;
+      will-change: width;
       transition: width 0.5s;
     }
 
     .topbar input ~ .content
     {
       width: 0;
+      will-change: width;
       transition: width 0.5s;
     }
 
