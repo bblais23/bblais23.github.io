@@ -45,7 +45,6 @@
   {
     width:300px;
     background-color: var(--background, #F00);
-    overflow: hidden;
     height: 100vh;
     padding-top: 2em;
     float: left;
@@ -100,20 +99,21 @@
 
     .topbar input:checked ~ .content
     {
-      width: 60vw;
-      will-change: width;
-      transition: width 0.5s;
+      left: 0;
+      will-change: left;
+      transition: left 0.25s ease-out;
     }
 
     .topbar input ~ .content
     {
-      width: 0;
-      will-change: width;
-      transition: width 0.5s;
+      left: calc(0px - 60vw);
+      will-change: left;
+      transition: left 0.25s ease-out;
     }
 
     .content
     {
+      width: 60vw;
       position: absolute;
     }
   }
