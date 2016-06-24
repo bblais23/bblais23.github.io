@@ -36,6 +36,16 @@
     text-align-last: left;
   }
 
+  route-view
+  {
+    display: block;
+  }
+
+  route-view.closed
+  {
+    display: none;
+  }
+
   menu-bar,
   box-content,
   article-content
