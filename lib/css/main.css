@@ -26,7 +26,7 @@
   {
     color: #e6e6e6;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
     height: calc(100% - 120pt)
   }
 
@@ -38,12 +38,19 @@
 
   route-view
   {
+    z-index: -1;
+    max-height: 100vh;
     display: block;
+    overflow: hidden;
+    transition: transform 0.25s ease-in, max-height 0.25s step-start;
   }
 
   route-view.closed
   {
-    display: none;
+    max-height: 0;
+    /* Move outside the viewport*/
+    transform: translateX(100vw);
+    transition: transform 0.25s ease-in, max-height 0.25s step-end;
   }
 
   menu-bar,
@@ -72,7 +79,7 @@
     .mainContent
     {
       text-align: left;
-      overflow: auto;
+      overflow: hidden;
       height: 100%;
     }
   }
