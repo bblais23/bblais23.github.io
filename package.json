@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bblais23/website/issues"
   },
-  "homepage": "https://github.com/bblais23/website#readme"
+  "homepage": "https://github.com/bblais23/website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
