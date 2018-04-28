@@ -1,0 +1,29 @@
+/**
+  * Copyright 2018 Benjamin Blais
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License. 
+  */
+.link-bar-nav.link-bar-bar 
+{
+  display: grid;
+  grid-gap: 0.25em;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 0.25em;
+}
+
+.link-bar-nav.link-bar-bar a
+{
+  background-color: rgba(0,0,0, 0.2);
+  text-align: center;
+}
+
+.link-bar-nav.link-bar-bar a.link-bar-profile
+{
+  text-align: left;
+}
+
+.link-bar-profile
+img
+{
+  width: 5em;
+}
