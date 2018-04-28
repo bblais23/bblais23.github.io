@@ -29,9 +29,15 @@
     margin: 0;
 }
 
-.link-bar-arrow span
+.link-bar-check ~ .link-bar-arrow > span
 {
     display: inline-block;
+    transition: transform 0.25s linear;
+}
+
+.link-bar-check:checked ~ .link-bar-arrow > span
+{
+    transform: rotate(180deg);
 }
 
 .link-bar-check:checked ~ a
