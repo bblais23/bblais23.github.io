@@ -6,15 +6,37 @@
 .link-bar-nav.link-bar-bar 
 {
   display: grid;
-  grid-gap: 0.25em;
+  grid-gap: 0.5em;
   background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 0.25em;
 }
 
 .link-bar-nav.link-bar-bar a
 {
-  background-color: rgba(0,0,0, 0.2);
   text-align: center;
+}
+
+.link-bar-check
+{
+    display: none;
+}
+
+.link-bar-arrow
+{
+    text-align: center;
+    color: rgb(185, 185, 185);
+    font-weight: bolder;
+    margin: 0;
+}
+
+.link-bar-arrow span
+{
+    display: inline-block;
+}
+
+.link-bar-check:checked ~ a
+{
+    display: none;
 }
 
 .link-bar-nav.link-bar-bar a.link-bar-profile

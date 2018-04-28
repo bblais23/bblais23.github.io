@@ -1,3 +1,8 @@
+/**
+  * Copyright 2018 Benjamin Blais
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License. 
+  */
 const gulp = require("gulp");
 const templatize = require("../Templateizer/templateizer-gulp.js");
 
