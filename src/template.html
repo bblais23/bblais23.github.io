@@ -9,29 +9,70 @@
     -->
   <base href="">
   <title>Ben Blais - Software Engineer</title>
-  <script src="lib/js/polyfills/webcomponents.min.js"></script>
 
-  <link rel="import" href="lib/components/menu-bar/index.html">
-  <link rel="import" href="lib/components/article-content/index.html">
-  <link rel="import" href="lib/components/twitter-socal-button/index.html">
-  <link rel="import" href="lib/components/github-socal-button/index.html">
-  <link rel="import" href="lib/components/profile-box/index.html">
-  <link rel="import" href="lib/components/box-content/index.html">
+  <style>
+  html,
+  body
+  {
+    /* Snap to position */
+    height: 100vh;
+    width: 100vw;
 
-  <script src="lib/components/route-view/main.js"></script>
+    margin: 0;
+    padding: 0;
+    background-color: #31342b;
+    background-image: url("images/background_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 
+  .link-bar-profile
+  img
+  {
+    width: 5em;
+  }
 
-  <link rel="stylesheet" type="text/css" href="lib/css/main.css">
+  a, p, h1
+  {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .template-content-wrapper
+  {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+       "nav"
+       "content";
+  }
+
+  nav.link-bar-bar 
+  {
+    grid-area: nav;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-auto-rows: auto;
+  }
+
+  .main-content
+  {
+    grid-area: content;
+  }
+  </style>
+
  </head>
  <body>
+ <div class="template-content-wrapper">
      {{include(pageIncludes/link-bar.html)}}
-     <div class="mainContent" style="">
-        <route-view href="index.html" class="itemBody{{ifView(partials/index.html, loaded, closed)}}">
-          {{bodyFor(partials/index.html)}}
-        </route-view>
-        <route-view href="projects/.*" class="itemBody{{ifView(partials/projects/index.html, loaded, closed)}}">
-          {{bodyFor(partials/projects/index.html)}}
-        </route-view>
+
+     <div class="main-content" style="">
+      {{body}}
      </div>
+
+ </div>
  </body>
 </html>

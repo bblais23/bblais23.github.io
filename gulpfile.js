@@ -7,4 +7,15 @@ gulp.task('pages', _ => {
                .pipe(gulp.dest('./build'));
 });
 
-gulp.task('default', ['pages']);
+gulp.task('lib', _ => {
+    return gulp.src(['src/lib/**/*', '!src/lib/components/*'])
+               .pipe(gulp.dest('./build'));
+})
+
+gulp.task('default', ['pages', 'lib']);
+
+const watcher = gulp.watch('src/**/*', ['default']);
+
+watcher.on('change', evt => {
+    console.log(`File ${evt.path} was ${evt.type}, running tasks...`);
+});
