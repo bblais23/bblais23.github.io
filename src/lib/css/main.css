@@ -50,5 +50,7 @@
 
   .main-content
   {
+    padding: 1em;
     grid-area: content;
+    overflow: auto;
   }
