@@ -14,6 +14,15 @@
 .link-bar-nav.link-bar-bar a
 {
   text-align: center;
+  overflow: hidden;
+  max-height: 2em;
+  transition: max-height 0.25s linear;
+}
+
+/*We need to ensure proper height for the profile*/
+.link-bar-nav a.link-bar-profile
+{
+  max-height: 10em;
 }
 
 .link-bar-check
@@ -42,7 +51,8 @@
 
 .link-bar-check:checked ~ a
 {
-    display: none;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .link-bar-nav.link-bar-bar a.link-bar-profile
