@@ -23,6 +23,12 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  a
+  {
+    color: #FFF;
+    text-decoration: none;
+  }
+
 
   .template-content-wrapper
   {
