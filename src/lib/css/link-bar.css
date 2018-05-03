@@ -6,7 +6,7 @@
 .link-bar-nav.link-bar-bar 
 {
   display: grid;
-  grid-gap: 0.5em;
+  grid-gap: 1pt;
   background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 0.25em;
 }
@@ -15,13 +15,16 @@
 {
   text-align: center;
   overflow: hidden;
-  max-height: 2em;
-  transition: max-height 0.25s linear;
+  max-height: 3em;
+  transition: max-height 0.25s linear, padding 0.25s step-start;
+  box-shadow: 0 0 0 1pt #FFF;
+  line-height: 2em;
 }
 
 /*We need to ensure proper height for the profile*/
 .link-bar-nav a.link-bar-profile
 {
+  padding: 1em;
   max-height: 10em;
 }
 
@@ -52,12 +55,31 @@
 .link-bar-check:checked ~ a
 {
   max-height: 0;
+  padding: 0;
   overflow: hidden;
+  transition: max-height 0.25s linear, padding 0.25s step-end;
+}
+
+.link-bar-nav h1
+{
+  font-size: 1.5em;
+}
+
+.link-bar-nav h2
+{
+  font-size: 1em;
 }
 
 .link-bar-nav.link-bar-bar a.link-bar-profile
 {
+  box-shadow: unset;
+  line-height: 1em;
   text-align: left;
+}
+
+p.link-bar-arrow
+{
+  font-size: 2em;
 }
 
 .link-bar-profile
