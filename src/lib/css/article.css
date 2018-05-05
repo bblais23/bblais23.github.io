@@ -8,12 +8,11 @@ article.article,
 {
   padding: 1em;
   padding-left: 2em;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
 }
 .article h1
 {
   font-size: 2em;
+  text-align: center;
 }
 
 .article p
