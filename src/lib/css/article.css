@@ -1,0 +1,22 @@
+/**
+  * Copyright 2018 Benjamin Blais
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License. 
+  */
+article.article,
+.article
+{
+  padding: 1em;
+  padding-left: 2em;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.article h1
+{
+  font-size: 2em;
+}
+
+.article p
+{
+  text-align: left;
+}
