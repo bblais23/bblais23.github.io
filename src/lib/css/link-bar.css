@@ -21,6 +21,12 @@
   line-height: 2em;
 }
 
+/* Overide rule in main.css for underline text decoration*/
+.link-bar-nav a:hover
+{
+  text-decoration: none;
+}
+
 /*We need to ensure proper height for the profile*/
 .link-bar-nav a.link-bar-profile
 {
