@@ -21,7 +21,7 @@
   line-height: 2em;
 }
 
-/* Overide rule in main.css for underline text decoration*/
+/* Override rule in main.css for underline text decoration*/
 .link-bar-nav a:hover
 {
   text-decoration: none;
