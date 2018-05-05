@@ -7,6 +7,7 @@ article.article,
 .article
 {
   display: grid;
+  grid-gap: 1em;
   align-content: start;
   padding: 1em;
   padding-left: 2em;
@@ -20,4 +21,10 @@ article.article,
 .article p
 {
   text-align: left;
+}
+
+.article .article-content-box
+{
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1em;
 }
