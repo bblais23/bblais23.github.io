@@ -6,6 +6,8 @@
 article.article,
 .article
 {
+  display: grid;
+  align-content: start;
   padding: 1em;
   padding-left: 2em;
 }

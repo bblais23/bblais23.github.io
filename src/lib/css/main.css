@@ -42,7 +42,6 @@
     height: 100%;
     overflow: hidden;
     display: grid;
-    grid-gap: 1em;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
        "nav"
@@ -56,6 +55,7 @@
 
   .main-content
   {
+    display: grid;
     padding: 1em;
     grid-area: content;
     overflow: auto;
