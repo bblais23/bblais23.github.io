@@ -13,7 +13,7 @@ gulp.task('pages', _ => {
 });
 
 gulp.task('lib', _ => {
-    return gulp.src(['src/lib/**/*', '!src/lib/components/**/*', '!src/lib/components'])
+    return gulp.src(['src/lib/**/*'])
                .pipe(gulp.dest('./docs'));
 })
 
