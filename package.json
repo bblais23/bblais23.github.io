@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bblais23/website.git"
+  },
+  "author": "Ben Blais",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bblais23/website/issues"
+  },
+  "homepage": "https://github.com/bblais23/website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

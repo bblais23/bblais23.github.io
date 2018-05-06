@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+    <!-- 
+       Copyright 2018 Benjamin Blais
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License. 
+    -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="{{relativeBase}}">
+  <title>Ben Blais - Software Engineer</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/link-bar.css">
+  <link rel="stylesheet" type="text/css" href="css/article.css">
+  <link rel="stylesheet" type="text/css" href="css/social-button.css">
+
+  <style>
+  </style>
+
+ </head>
+ <body>
+ <div class="template-content-wrapper">
+     {{include(pageIncludes/link-bar.html)}}
+
+     <div class="main-content">
+      {{body}}
+     </div>
+
+ </div>
+ </body>
+</html>
