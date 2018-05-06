@@ -9,6 +9,8 @@
   grid-gap: 1pt;
   background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 0.25em;
+  overflow: hidden;
+  align-content: start;
 }
 
 .link-bar-nav.link-bar-bar a
@@ -92,4 +94,12 @@ p.link-bar-arrow
 img
 {
   width: 5em;
+}
+
+@media (min-width: 900px)
+{
+  p.link-bar-arrow
+  {
+    display: none;
+  }
 }

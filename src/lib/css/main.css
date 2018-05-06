@@ -43,9 +43,10 @@
     overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-areas: 
-       "nav"
-       "content";
+       "nav nav"
+       "content content";
   }
 
   .link-bar-bar 
@@ -67,6 +68,7 @@
     {
       grid-template-columns: auto 1fr;
       grid-template-areas:
+      "nav content"
       "nav content";
     }
   }
