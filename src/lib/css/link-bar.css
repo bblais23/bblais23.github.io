@@ -60,14 +60,6 @@
     transform: rotate(180deg);
 }
 
-.link-bar-check:checked ~ a
-{
-  max-height: 0;
-  padding: 0;
-  overflow: hidden;
-  transition: max-height 0.25s linear, padding 0.25s step-end;
-}
-
 .link-bar-nav h1
 {
   font-size: 1.5em;
@@ -94,6 +86,17 @@ p.link-bar-arrow
 img
 {
   width: 5em;
+}
+
+@media (max-width: 900px)
+{
+  .link-bar-check:checked ~ a
+  {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.25s linear, padding 0.25s step-end;
+  }
 }
 
 @media (min-width: 900px)
