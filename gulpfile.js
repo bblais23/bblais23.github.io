@@ -9,12 +9,12 @@ const templatize = require("../Templateizer/templateizer-gulp.js");
 gulp.task('pages', _ => {
     return gulp.src('src/partials/**/*.html')
                .pipe(templatize('src/template.html'))
-               .pipe(gulp.dest('./build'));
+               .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('lib', _ => {
     return gulp.src(['src/lib/**/*', '!src/lib/components/*'])
-               .pipe(gulp.dest('./build'));
+               .pipe(gulp.dest('./docs'));
 })
 
 gulp.task('default', ['pages', 'lib']);
