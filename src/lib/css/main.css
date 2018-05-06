@@ -43,7 +43,7 @@
     overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(auto, 20em) 1fr;
     grid-template-areas: 
        "nav nav"
        "content content";
@@ -64,9 +64,13 @@
 
   @media (min-width: 900px)
   {
+    html,
+    body
+    {
+      background-image: url('../images/background_3.jpg');
+    }
     .template-content-wrapper
     {
-      grid-template-columns: auto 1fr;
       grid-template-areas:
       "nav content"
       "nav content";
