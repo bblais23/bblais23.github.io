@@ -105,4 +105,10 @@ img
   {
     display: none;
   }
+
+  .link-bar-nav.link-bar-bar a
+  {
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 2em;
+  }
 }

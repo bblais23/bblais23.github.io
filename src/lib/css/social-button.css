@@ -29,3 +29,11 @@
   {
     background-image: url('../images/github-icon.png');
   }
+
+  @media (min-width: 900px)
+  {
+    .social-button
+    {
+      justify-content: left;
+    }
+  }
