@@ -60,3 +60,13 @@
     grid-area: content;
     overflow: auto;
   }
+
+  @media (min-width: 900px)
+  {
+    .template-content-wrapper
+    {
+      grid-template-columns: auto 1fr;
+      grid-template-areas:
+      "nav content";
+    }
+  }
