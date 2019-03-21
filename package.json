@@ -4,7 +4,8 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" : "eleventy",
+    "serve" : "eleventy --serve --port=3000"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,7 @@
     "url": "https://github.com/bblais23/website/issues"
   },
   "homepage": "https://github.com/bblais23/website#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
 }
