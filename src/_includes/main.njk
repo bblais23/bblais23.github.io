@@ -8,13 +8,12 @@
        you may not use this file except in compliance with the License. 
     -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="{{relativeBase}}">
   <title>Ben Blais - Software Engineer</title>
 
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/link-bar.css">
-  <link rel="stylesheet" type="text/css" href="css/article.css">
-  <link rel="stylesheet" type="text/css" href="css/social-button.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/link-bar.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/article.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/social-button.css">
 
   <style>
   </style>
@@ -25,7 +24,7 @@
      {{include(pageIncludes/link-bar.html)}}
 
      <div class="main-content">
-      {{body}}
+      {{ content | safe }}
      </div>
 
  </div>
