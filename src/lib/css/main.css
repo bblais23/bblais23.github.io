@@ -43,7 +43,7 @@
 		overflow: hidden;
 		display: grid;
 		grid-template-rows: auto 1fr;
-		grid-template-columns: minmax(auto, 20em) minmax(auto, 60em);
+		grid-template-columns: minmax(auto, 20em) auto;
 		grid-template-areas: 
 			 "nav nav"
 			 "content content";

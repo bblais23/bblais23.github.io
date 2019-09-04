@@ -11,6 +11,7 @@ article.article,
 	align-content: start;
 	padding: 1em;
 	padding-left: 2em;
+	max-width: 60em;
 }
 .article h1
 {
