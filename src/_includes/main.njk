@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <meta charset="UTF-8">
-    <!-- 
-       Copyright 2019 Benjamin Blais
-       Licensed under the Apache License, Version 2.0 (the "License");
-       you may not use this file except in compliance with the License. 
-    -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ben Blais - Software Engineer</title>
+	<meta charset="UTF-8">
+		<!-- 
+			 Copyright 2019 Benjamin Blais
+			 Licensed under the Apache License, Version 2.0 (the "License");
+			 you may not use this file except in compliance with the License. 
+		-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ben Blais - Software Engineer</title>
 
-  <link rel="stylesheet" type="text/css" href="/lib/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/lib/css/link-bar.css">
-  <link rel="stylesheet" type="text/css" href="/lib/css/article.css">
-  <link rel="stylesheet" type="text/css" href="/lib/css/social-button.css">
+	<link rel="stylesheet" type="text/css" href="/lib/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/lib/css/link-bar.css">
+	<link rel="stylesheet" type="text/css" href="/lib/css/article.css">
+	<link rel="stylesheet" type="text/css" href="/lib/css/social-button.css">
 
-  <style>
-  </style>
+	<style>
+	</style>
 
  </head>
  <body>
  <div class="template-content-wrapper">
-  <label class="link-bar-bar link-bar-nav">
-    <input class="link-bar-check" type="checkbox">
-    <a class="link-bar-profile" href="/">
-      <img src="/lib/images/profile_pic.jpg">
-      <h1>Benjamin Blais</h1>
-      <h2>Software Developer</h2>
-    </a>
-    <a href="/projects/index.html">Projects</a>
-    <a rel="noopener noreferrer" target="_blank" href="https://blog.benblais.com">Blog</a>
-    <a class="social-button social-button-twitter" rel="noopener noreferrer" target="_blank" href="https://twitter.com/benblais">@benblais</a>
-    <a class="social-button social-button-github" rel="noopener noreferrer" target="_blank" href="https://github.com/bblais23">bblais23</a>
-    <p class="link-bar-arrow"><span>▲</span></p>
-  </label>
-
-     <div class="main-content">
-      {{ content | safe }}
-     </div>
-
+	<label class="link-bar-bar link-bar-nav">
+		<input class="link-bar-check" type="checkbox">
+		<a class="link-bar-profile" href="/">
+			<img src="/lib/images/profile_pic.jpg">
+			<h1>Benjamin Blais</h1>
+			<h2>Software Developer</h2>
+		</a>
+		<a href="/projects/index.html">Projects</a>
+		<a rel="noopener noreferrer" target="_blank" href="https://blog.benblais.com">Blog</a>
+		<a class="social-button social-button-twitter" rel="noopener noreferrer" target="_blank" href="https://twitter.com/benblais">@benblais</a>
+		<a class="social-button social-button-github" rel="noopener noreferrer" target="_blank" href="https://github.com/bblais23">bblais23</a>
+		<p class="link-bar-arrow"><span>▲</span></p>
+	</label>
+	<div class="main-content">
+		{{ content | safe }}
+	</div>
  </div>
  </body>
 </html>
