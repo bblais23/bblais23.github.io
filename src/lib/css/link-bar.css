@@ -88,7 +88,7 @@ img
 	width: 5em;
 }
 
-@media (max-width: 900px)
+@media (max-width: 900px), (max-device-width: 900px)
 {
 	.link-bar-check:checked ~ a
 	{
@@ -99,7 +99,7 @@ img
 	}
 }
 
-@media (min-width: 900px)
+@media (min-width: 900px), (min-device-width: 900px)
 {
 	p.link-bar-arrow
 	{
