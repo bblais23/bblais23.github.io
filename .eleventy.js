@@ -9,7 +9,8 @@ module.exports = {
       "css",
       "jpg",
       "png",
-      "gif",
+			"gif",
+			"svg",
       "njk"
     ],
     passthroughFileCopy: true
