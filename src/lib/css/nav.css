@@ -13,8 +13,10 @@ nav,
 	align-items: center;
 
 	padding: 1em;
+
+	background: rgb(238, 210, 2);
 }
 
-img.logo {
+.logo {
 	height: 5em;
 }
