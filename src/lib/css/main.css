@@ -32,6 +32,9 @@ body {
 			rgba(0, 0, 0, 0.5)
 		),
 		url('/lib/images/background.jpg') center / cover;
+
+		/* Font */
+		font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Make body grid */
