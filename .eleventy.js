@@ -1,17 +1,21 @@
 module.exports = {
-    dir: {
-      input: 'src',
-      output: '_site'
-    },
-    templateFormats: [
-      "md",
-      "html",
-      "css",
-      "jpg",
-      "png",
+		dir: {
+			input: 'src',
+			output: '_site'
+		},
+		templateFormats: [
+			"md",
+			"html",
+			"css",
+			"jpg",
+			"png",
 			"gif",
 			"svg",
-      "njk"
-    ],
-    passthroughFileCopy: true
+			"njk",
+			"ttf",
+			"otf",
+			"woff",
+			"woff2",
+		],
+		passthroughFileCopy: true
 }
