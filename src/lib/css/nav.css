@@ -11,24 +11,29 @@ nav,
 .nav {
 
 	/* Formating */
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-areas:
+		"logo name"
+		"logo title"
+	;
 	align-items: center;
-
+	align-content: center;
 	padding: 1em;
-
 	background: rgb(238, 210, 2);
 }
 
 .logo {
+	grid-area: logo;
 	height: 6em;
 }
 
 .nav h1 {
+	grid-area: name;
 	font-family: 'Michael', Arial, Helvetica, sans-serif;
 }
 
 .nav h2 {
+	grid-area: title;
 	font-family: 'Cormorant Upright Light';
 	padding-left: 2em;
 }
