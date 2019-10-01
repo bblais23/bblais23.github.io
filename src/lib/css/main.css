@@ -10,6 +10,11 @@ body {
 	padding: 0;
 }
 
+/* Text reset */
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
 /* Set font size */
 body {
 	font-size: 16pt;
