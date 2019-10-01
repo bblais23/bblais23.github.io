@@ -5,6 +5,7 @@
  */
 
 @import '../fonts/michael.css';
+@import '../fonts/cormorantupright-light.css';
 
 nav,
 .nav {
@@ -20,9 +21,14 @@ nav,
 }
 
 .logo {
-	height: 5em;
+	height: 6em;
 }
 
 .nav h1 {
 	font-family: 'Michael', Arial, Helvetica, sans-serif;
+}
+
+.nav h2 {
+	font-family: 'Cormorant Upright Light';
+	padding-left: 2em;
 }
