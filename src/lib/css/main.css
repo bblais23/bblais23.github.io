@@ -33,8 +33,8 @@ body {
 		/* You can't put a color on top of an image, 
 		we are using a liniar gradient as a hack*/
 		linear-gradient(
-			rgba(0, 0, 0, 0.5),
-			rgba(0, 0, 0, 0.5)
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
 		),
 		url('/lib/images/background.jpg') center / cover;
 
