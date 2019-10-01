@@ -4,6 +4,8 @@
  * you may not use this file except in compliance with the License.
  */
 
+@import '../fonts/michael.css';
+
 nav,
 .nav {
 
@@ -19,4 +21,8 @@ nav,
 
 .logo {
 	height: 5em;
+}
+
+.nav h1 {
+	font-family: 'Michael', Arial, Helvetica, sans-serif;
 }
