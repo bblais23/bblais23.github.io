@@ -16,8 +16,9 @@ nav,
 		"logo name"
 		"logo title"
 	;
-	align-items: center;
-	align-content: center;
+	grid-template-columns: auto 1fr;
+	justify-items: center;
+	justify-content: stretch;
 	padding: 1em;
 	background: rgb(223, 184, 10);
 }
