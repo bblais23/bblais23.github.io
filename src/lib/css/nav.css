@@ -4,9 +4,6 @@
  * you may not use this file except in compliance with the License.
  */
 
-@import '../fonts/michael.css';
-@import '../fonts/cormorantupright-light.css';
-
 nav,
 .nav {
 
@@ -20,7 +17,7 @@ nav,
 	justify-items: center;
 	justify-content: stretch;
 	padding: 1em;
-	background: rgb(223, 184, 10);
+	background: var(--header-color);
 }
 
 .logo {
@@ -32,11 +29,11 @@ nav,
 	border: none;
 	padding-bottom: 0;
 	grid-area: name;
-	font-family: 'Michael', Arial, Helvetica, sans-serif;
+	font-family: var(--name-font);
 }
 
 .nav h2 {
 	grid-area: title;
-	font-family: 'Cormorant Upright Light';
+	font-family: var(--title-font);
 	padding-left: 2em;
 }

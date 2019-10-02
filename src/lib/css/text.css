@@ -4,13 +4,10 @@
  * you may not use this file except in compliance with the License.
  */
 
- @import '../fonts/sortsMillGoudy.css';
- @import '../fonts/cinzel.css';
-
 h1 {
 	display: inline-block;
-	border-top: 0.05em solid #BBB;
-	border-bottom: 0.05em solid #BBB;
+	border-top: var(--white-border);
+	border-bottom: var(--white-border);
 	font-size: 2em;
 	margin-bottom: 0.25em;
 }
@@ -26,10 +23,10 @@ p {
 
 h1, h2, h3, h4 {
 	font-weight: normal;
-	font-family: 'Cinzel', 'Times New Roman', Times, serif;
+	font-family: var(--header-font);
 }
 
 p {
-	font-family: 'Sports Mill Goudy', 'Times New Roman', Times, serif;
+	font-family: var(--paragraph-font);
 	line-height: 1.25em;
 }
