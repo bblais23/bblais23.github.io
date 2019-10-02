@@ -5,8 +5,8 @@
  */
 @font-face {
 	font-family: 'Michael';
-	src:  url('./michael.woff2') format('woff2'),
-				url('./michael.woff') format('woff'),
-				url('./michael.otf') format('opentype');
+	src:  url('./michael/michael.woff2') format('woff2'),
+				url('./michael/michael.woff') format('woff'),
+				url('./michael/michael.otf') format('opentype');
 
 }
