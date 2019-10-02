@@ -3,6 +3,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  */
+
+ @import '../fonts/sortsMillGoudy.css';
+
 h1 {
 	font-size: 2em;
 	padding-bottom: 0.25em;
@@ -15,4 +18,12 @@ h2 {
 
 p {
 	padding-bottom: 1em;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Sports Mill Goudy', 'Times New Roman', Times, serif;
+}
+
+p {
+	font-family: 'Sports Mill Goudy', 'Times New Roman', Times, serif;
 }
