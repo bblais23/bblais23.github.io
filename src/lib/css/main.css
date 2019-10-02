@@ -62,3 +62,11 @@ main,
 	grid-area: main;
 }
 
+/* Main area styling */
+main,
+.main {
+	padding: 2em;
+	justify-self: center;
+	color: #BBB;
+	background-color: rgba(40, 40, 40, 0.5);
+}
