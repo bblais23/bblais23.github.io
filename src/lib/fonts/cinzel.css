@@ -1,0 +1,19 @@
+/**
+ * Copyright 2019 Benjamin Blais
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ */
+ @font-face {
+	font-family: 'Cinzel';
+	src:  url('./cinzel/cinzel-regular.woff2') format('woff2'),
+				url('./cinzel/cinzel-regular.woff') format('woff'),
+				url('./cinzel/cinzel-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Cinzel';
+	src:  url('./cinzel/cinzel-bold.woff2') format('woff2'),
+				url('./cinzel/cinzel-bold.woff') format('woff'),
+				url('./cinzel/cinzel-bold.ttf') format('truetype');
+	font-weight: bold;
+}
