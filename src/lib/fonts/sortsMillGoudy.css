@@ -1,0 +1,19 @@
+/**
+ * Copyright 2019 Benjamin Blais
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ */
+ @font-face {
+	font-family: 'Sports Mill Goudy';
+	src:  url('./sortsMillGoudy/SortsMillGoudy-Regular.woff2') format('woff2'),
+				url('./sortsMillGoudy/SortsMillGoudy-Regular.woff') format('woff'),
+				url('./sortsMillGoudy/SortsMillGoudy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sports Mill Goudy';
+	src:  url('./sortsMillGoudy/SortsMillGoudy-Italic.woff2') format('woff2'),
+				url('./sortsMillGoudy/SortsMillGoudy-Italic.woff') format('woff'),
+				url('./sortsMillGoudy/SortsMillGoudy-Italic.ttf') format('truetype');
+				font-style: italic;
+}
