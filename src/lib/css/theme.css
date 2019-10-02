@@ -1,0 +1,25 @@
+@import '../fonts/sortsMillGoudy.css';
+@import '../fonts/cinzel.css';
+
+@import '../fonts/michael.css';
+@import '../fonts/cormorantupright-light.css';
+
+body {
+	--white: #BBB;
+	--black: #000;
+	--yellow: rgb(223, 184, 10);
+	--darken: rgba(40, 40, 40, 0.5);
+
+	/* Fonts */
+	--paragraph-font: 'Sports Mill Goudy', 'Times New Roman', Times, serif;
+	--header-font: 'Cinzel', 'Times New Roman', Times, serif;
+	--name-font: 'Michael', Arial, Helvetica, sans-serif;
+	--title-font: 'Cormorant Upright Light', cursive;
+
+	--color: var(--white);
+	--header-color: var(--yellow);
+
+	--main-background: var(--darken);
+
+	--white-border: 0.05em solid var(--color);
+}
