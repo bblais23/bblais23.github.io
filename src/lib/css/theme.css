@@ -18,6 +18,7 @@ body {
 
 	--color: var(--white);
 	--header-color: var(--yellow);
+	--header-text: var(--black);
 
 	--main-background: var(--darken);
 
