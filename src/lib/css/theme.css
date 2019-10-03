@@ -5,10 +5,20 @@
 @import '../fonts/cormorantupright-light.css';
 
 body {
+
+	/* Colors */
 	--white: #BBB;
 	--black: #000;
 	--yellow: rgb(223, 184, 10);
 	--darken: rgba(40, 40, 40, 0.5);
+
+	/* Gradients */
+	--divider-gradient: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0)
+	);
 
 	/* Fonts */
 	--paragraph-font: 'Sports Mill Goudy', 'Times New Roman', Times, serif;
@@ -16,6 +26,7 @@ body {
 	--name-font: 'Michael', Arial, Helvetica, sans-serif;
 	--title-font: 'Cormorant Upright Light', cursive;
 
+	/* Themed Colors */
 	--color: var(--white);
 	--header-color: var(--yellow);
 	--header-text: var(--black);

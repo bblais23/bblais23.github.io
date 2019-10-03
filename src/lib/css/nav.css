@@ -16,7 +16,15 @@ nav input[type="checkbox"] {
 	display: none;
 }
 
+nav p:not(:first-of-type) {
+	border-width: 1px;
+	border-style: solid;
+	border-bottom: none;
+	border-image: var(--divider-gradient) 5;
+}
+
 nav p {
+	line-height: 2em;
 	overflow: hidden;
 	padding: 0;
 }
