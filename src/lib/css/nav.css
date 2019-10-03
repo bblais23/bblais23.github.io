@@ -27,7 +27,10 @@ nav label {
 }
 
 nav input[type="checkbox"] {
-	display: none;
+	opacity: 0;
+	height: 1px;
+	margin: 0;
+	padding: 0;
 }
 
 nav input[type="checkbox"]:checked::before {
@@ -81,6 +84,11 @@ nav p.nav-arrow span {
 /* Rotate the nav arrow when we open the dropdown */
 nav input[type="checkbox"]:checked ~ p.nav-arrow span {
 	transform: rotate(180deg);
+}
+
+/* Focus for the nav checkbox */
+nav input[type="checkbox"]:focus ~ p.nav-arrow {
+	outline: var(--outline);
 }
 
 nav p.nav-arrow span::after {
