@@ -11,6 +11,12 @@ body {
 	--black: #000;
 	--yellow: rgb(223, 184, 10);
 	--darken: rgba(40, 40, 40, 0.5);
+	--lighten: rgba(170, 170, 170, 0.25);
+
+	/* Themed Colors */
+	--color: var(--white);
+	--header-color: var(--yellow);
+	--header-text: var(--black);
 
 	/* Gradients */
 	--divider-gradient: linear-gradient(
@@ -20,16 +26,14 @@ body {
 		rgba(0, 0, 0, 0)
 	);
 
+	/* Box shadow */
+	--box-shadow: 0 0 0.1em 0.2em var(--lighten);
+
 	/* Fonts */
 	--paragraph-font: 'Sports Mill Goudy', 'Times New Roman', Times, serif;
 	--header-font: 'Cinzel', 'Times New Roman', Times, serif;
 	--name-font: 'Michael', Arial, Helvetica, sans-serif;
 	--title-font: 'Cormorant Upright Light', cursive;
-
-	/* Themed Colors */
-	--color: var(--white);
-	--header-color: var(--yellow);
-	--header-text: var(--black);
 
 	--main-background: var(--darken);
 
