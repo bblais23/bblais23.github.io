@@ -41,3 +41,13 @@ nav p.nav-arrow {
 	font-size: 1.5em;
 	line-height: 1.5em;
 }
+
+nav p.nav-arrow span {
+	transform: rotate(0deg);
+	transition: transform 0.1s linear;
+	display: block;
+}
+
+nav input[type="checkbox"]:checked ~ p.nav-arrow span {
+	transform: rotate(180deg);
+}
