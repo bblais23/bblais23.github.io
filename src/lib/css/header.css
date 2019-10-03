@@ -26,6 +26,7 @@ header,
 .logo {
 	grid-area: logo;
 	height: 6em;
+	filter: drop-shadow(var(--text-shadow));
 	fill: var(--color);
 }
 
