@@ -4,8 +4,8 @@
  * you may not use this file except in compliance with the License.
  */
 
-nav,
-.nav {
+header,
+.header {
 
 	/* Formating */
 	display: grid;
@@ -25,14 +25,14 @@ nav,
 	height: 6em;
 }
 
-.nav h1 {
+.header h1 {
 	border: none;
 	padding-bottom: 0;
 	grid-area: name;
 	font-family: var(--name-font);
 }
 
-.nav h2 {
+.header h2 {
 	grid-area: title;
 	font-family: var(--title-font);
 	padding-left: 2em;

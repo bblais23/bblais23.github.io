@@ -53,8 +53,8 @@ body {
 }
 
 /* Define grid area */
-nav,
-.nav {
+header,
+.header {
 	grid-area: nav;
 }
 main,
