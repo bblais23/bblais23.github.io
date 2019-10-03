@@ -6,10 +6,29 @@
 
 h1 {
 	display: inline-block;
-	border-top: var(--text-border);
-	border-bottom: var(--text-border);
 	font-size: 2em;
 	margin-bottom: 0.25em;
+}
+
+/* This creates an over/under line, 
+	 we are using the ::after/before pseudo-elements to
+	 change its width and animate the header */
+
+h1::before,
+h1::after {
+	/*make this element exist and display it as a block*/
+	content: '';
+	display: block;
+
+	/*Position the element*/
+	margin: 0 auto;
+
+	/*size (animated)*/
+	width: 100%;
+	animation: var(--animate-grow);
+
+	/*border-top would have also worked since the content is empty*/
+	border-bottom: var(--text-border);
 }
 
 h2 {

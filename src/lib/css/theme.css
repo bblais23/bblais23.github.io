@@ -4,6 +4,12 @@
 @import '../fonts/michael.css';
 @import '../fonts/cormorantupright-light.css';
 
+@keyframes growAnimate {
+	from {
+		width: 0;
+	}
+}
+
 body {
 
 	/* Colors */
@@ -39,4 +45,7 @@ body {
 	--main-background: var(--darken);
 
 	--text-border: 0.05em solid var(--color);
+
+	/*Animations*/
+	--animate-grow: growAnimate 1s ease-out 0.25s 1;
 }
