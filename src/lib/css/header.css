@@ -38,6 +38,11 @@ header,
 	text-shadow: 0.1em 0.1em 0.3em var(--darken);
 }
 
+/* This First letter should be hidden except for screeneraders */
+.header h1::first-letter {
+	font-size: 0;
+}
+
 .header h1::before,
 .header h1::after {
 	content: none;
