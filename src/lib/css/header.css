@@ -18,12 +18,14 @@ header,
 	justify-items: center;
 	justify-content: stretch;
 	padding: 1em;
+	--color: var(--header-text);
 	background: var(--header-color);
 }
 
 .logo {
 	grid-area: logo;
 	height: 6em;
+	fill: var(--color);
 }
 
 .header h1 {
