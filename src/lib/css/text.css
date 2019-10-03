@@ -27,3 +27,8 @@ p {
 	line-height: 1.25em;
 	padding-bottom: 1em;
 }
+
+/*All text will have the same shadow in content*/
+p, h1, h2, h3, h4 {
+	text-shadow: var(--text-shadow);
+}
