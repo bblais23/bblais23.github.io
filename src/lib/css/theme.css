@@ -22,5 +22,5 @@ body {
 
 	--main-background: var(--darken);
 
-	--white-border: 0.05em solid var(--color);
+	--text-border: 0.05em solid var(--color);
 }
