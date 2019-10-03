@@ -1,3 +1,9 @@
+/**
+ * Copyright 2019 Benjamin Blais
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ */
+ 
 @import '../fonts/sortsMillGoudy.css';
 @import '../fonts/cinzel.css';
 
@@ -16,11 +22,13 @@ body {
 	--white: #BBB;
 	--black: #000;
 	--yellow: rgb(223, 184, 10);
+	--blue: rgba(14, 96, 121, 0.75);
 	--darken: rgba(40, 40, 40, 0.5);
 	--lighten: rgba(170, 170, 170, 0.25);
 
 	/* Themed Colors */
 	--color: var(--white);
+	--accent-color: var(--blue);
 	--header-color: var(--yellow);
 	--header-text: var(--black);
 
@@ -45,6 +53,8 @@ body {
 	--main-background: var(--darken);
 
 	--text-border: 0.05em solid var(--color);
+
+	--outline: var(--accent-color) dashed 0.25em;
 
 	/*Animations*/
 	--animate-grow: growAnimate 1s ease-out 0.25s 1;
