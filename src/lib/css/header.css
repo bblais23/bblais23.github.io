@@ -15,7 +15,7 @@ header,
 		"nav  nav"
 	;
 	grid-template-columns: auto 1fr;
-	justify-items: center;
+	justify-items: stretch;
 	justify-content: stretch;
 	padding: 1em;
 	--color: var(--header-text);
@@ -38,9 +38,9 @@ header,
 .header h2 {
 	grid-area: title;
 	font-family: var(--title-font);
-	padding-left: 2em;
 }
 
 .nav {
 	grid-area: nav;
+	justify-self: stretch;
 }
