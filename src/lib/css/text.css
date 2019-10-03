@@ -13,7 +13,6 @@ h1 {
 /* This creates an over/under line, 
 	 we are using the ::after/before pseudo-elements to
 	 change its width and animate the header */
-
 h1::before,
 h1::after {
 	/*make this element exist and display it as a block*/
