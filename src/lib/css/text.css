@@ -6,8 +6,8 @@
 
 h1 {
 	display: inline-block;
-	border-top: var(--white-border);
-	border-bottom: var(--white-border);
+	border-top: var(--text-border);
+	border-bottom: var(--text-border);
 	font-size: 2em;
 	margin-bottom: 0.25em;
 }
