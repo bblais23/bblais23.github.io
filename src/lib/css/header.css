@@ -21,6 +21,7 @@ header,
 	--color: var(--header-text);
 	background: var(--header-color);
 	padding-bottom: 0;
+	box-shadow: var(--box-shadow);
 }
 
 .logo {
