@@ -113,7 +113,7 @@ nav p.nav-arrow span::after {
 
 	/* Ripple Shadow */
 	border-radius: 0.75em;
-	box-shadow: var(--box-shadow);
+	box-shadow: 0 0 0.1em 0.2em var(--lighten);
 }
 
 /*Hide the ripple when the dropdown is open*/
