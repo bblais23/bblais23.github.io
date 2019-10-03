@@ -6,7 +6,15 @@
 
 /* Animation for the ripple */
 @keyframes dropRipple {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
 
+	40% {
+		opacity: 0;
+		transform: scale(5);
+	}
 }
 
 nav {
@@ -43,18 +51,55 @@ nav p {
 
 nav p.nav-arrow {
 	max-height: unset;
+	overflow: visible;
 }
 
 nav p.nav-arrow span {
+	/* Font */
 	font-size: 1.5em;
 	line-height: 1.5em;
+
+	/* Display */
+	display: inline-block;
+	position: relative;
 	height: 1.5em;
 	width: 1.5em;
+
 	transform: rotate(0deg);
 	transition: transform 0.1s linear;
-	display: inline-block;
 }
 
+/* Rotate the nav arrow when we open the dropdown */
 nav input[type="checkbox"]:checked ~ p.nav-arrow span {
 	transform: rotate(180deg);
+}
+
+nav p.nav-arrow span::after {
+	content: '';
+
+	/* Positioning, should be on top of span */
+	position: absolute;
+	display: block;
+	z-index: 1;
+	margin: auto;
+	top: 0;
+	left: 0;
+
+	/*Animation values, the ripple will be invisible*/
+	opacity: 0;
+	transform: scale(5);
+	animation: dropRipple 3s ease-out 1s infinite normal forwards;
+
+	/* Sizing */
+	height: 100%;
+	width: 100%;
+
+	/* Ripple Shadow */
+	border-radius: 0.75em;
+	box-shadow: var(--box-shadow);
+}
+
+/*Hide the ripple when the dropdown is open*/
+nav input[type="checkbox"]:checked ~ p.nav-arrow span::after {
+	animation: none;
 }
