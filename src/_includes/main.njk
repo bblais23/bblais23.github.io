@@ -29,6 +29,7 @@
  </head>
  <body>
 	<header class="header">
+		<p class="skip-to-main"><a href="#main-content">Skip to Main Content</a></p>
 		<svg viewBox="0 0 260 250" class="logo" >
 			<title it="atBenTitle">Ben Blais Logo</title>
 			<desc id="atBenDesc">The letter 'B' stylized to look like an at sign</desc>
@@ -38,13 +39,13 @@
 		<h2>Software Engineer</h2>
 		<nav class="nav">
 			<label>
-				<input tabindex="0" type="checkbox">
+				<input aria-label="Open Navigation" tabindex="0" type="checkbox">
 				<p class="nav-arrow"><span aria-label="Nav Button" aria-hidden="true" role="image">⮛</span></p>
 				<p><a href="/uses">Gear</a></p>
 				<p><a href="/projects">Projects</a></p>
 			</label>
 		</nav>
 	</header>
-	<main class="main">{{content | safe}}</main>
+	<main id="main-content" class="main">{{content | safe}}</main>
  </body>
 </html>

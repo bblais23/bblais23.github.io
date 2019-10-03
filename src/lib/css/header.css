@@ -10,9 +10,9 @@ header,
 	/* Formating */
 	display: grid;
 	grid-template-areas:
-		"logo name"
-		"logo title"
-		"nav  nav"
+		"logo name skip"
+		"logo title ."
+		"nav  nav nav"
 	;
 	grid-template-columns: auto 1fr;
 	justify-items: stretch;
@@ -22,6 +22,17 @@ header,
 	background: var(--header-color);
 	padding-bottom: 0;
 	box-shadow: var(--box-shadow);
+}
+
+.header .skip-to-main a {
+	grid-area: skip;
+
+	/* This will be hidden until we 'tab to it'*/
+	opacity: 0;
+}
+
+.header .skip-to-main a:focus {
+	opacity: unset;
 }
 
 .header .logo {
