@@ -12,6 +12,7 @@ header,
 	grid-template-areas:
 		"logo name"
 		"logo title"
+		"nav  nav"
 	;
 	grid-template-columns: auto 1fr;
 	justify-items: center;
@@ -36,4 +37,8 @@ header,
 	grid-area: title;
 	font-family: var(--title-font);
 	padding-left: 2em;
+}
+
+.nav {
+	grid-area: nav;
 }
