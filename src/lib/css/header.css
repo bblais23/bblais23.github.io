@@ -31,10 +31,14 @@ header,
 }
 
 .header h1 {
-	border: none;
 	padding-bottom: 0;
 	grid-area: name;
 	font-family: var(--name-font);
+}
+
+.header h1::before,
+.header h1::after {
+	content: none;
 }
 
 .header h2 {
