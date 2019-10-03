@@ -4,8 +4,13 @@
  * you may not use this file except in compliance with the License.
  */
 
+nav {
+	text-align: center;
+}
 
-
+nav label {
+	display: block;
+}
 
 nav input[type="checkbox"] {
 	display: none;
