@@ -16,6 +16,10 @@ nav input[type="checkbox"] {
 	display: none;
 }
 
+nav input[type="checkbox"]:checked ~ p {
+	max-height: 3em;
+}
+
 nav p:not(:first-of-type) {
 	border-width: 1px;
 	border-style: solid;
@@ -24,7 +28,12 @@ nav p:not(:first-of-type) {
 }
 
 nav p {
+	max-height: 0;
 	line-height: 2em;
 	overflow: hidden;
 	padding: 0;
+}
+
+nav p.nav-arrow {
+	max-height: unset;
 }
