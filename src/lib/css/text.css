@@ -29,6 +29,7 @@ h1::after {
 
 	/*border-top would have also worked since the content is empty*/
 	border-bottom: var(--text-border);
+	box-shadow: var(--text-shadow);
 }
 
 h2 {
