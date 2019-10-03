@@ -11,9 +11,9 @@
 		transform: scale(1);
 	}
 
-	40% {
+	20% {
 		opacity: 0;
-		transform: scale(5);
+		transform: scale(3);
 	}
 }
 
@@ -87,8 +87,8 @@ nav p.nav-arrow span::after {
 
 	/*Animation values, the ripple will be invisible*/
 	opacity: 0;
-	transform: scale(5);
-	animation: dropRipple 3s ease-out 1s infinite normal forwards;
+	transform: scale(3);
+	animation: dropRipple 5s ease-out 1s infinite normal forwards;
 
 	/* Sizing */
 	height: 100%;
