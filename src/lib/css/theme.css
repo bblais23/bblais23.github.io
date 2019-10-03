@@ -54,7 +54,7 @@ body {
 
 	--text-border: 0.05em solid var(--color);
 
-	--outline: var(--accent-color) dashed 0.25em;
+	--outline: var(--accent-color) dashed 0.1em;
 
 	/*Animations*/
 	--animate-grow: growAnimate 1s ease-out 0.25s 1;
