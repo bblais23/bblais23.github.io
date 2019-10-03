@@ -22,14 +22,19 @@ nav {
 }
 
 nav label {
-	display: block;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 nav input[type="checkbox"] {
 	display: none;
 }
 
-nav input[type="checkbox"]:checked ~ p:not(:first-of-type) {
+nav input[type="checkbox"]:checked::before {
+	transform: rotate(180deg);
+}
+
+nav input[type="checkbox"]:checked ~ p:not(:last-of-type) {
 	border-width: 1px;
 	border-style: solid;
 	border-bottom: none;
@@ -41,12 +46,16 @@ nav input[type="checkbox"]:checked ~ p {
 }
 
 nav p {
-	max-height: 0;
+	/* Layout */
 	line-height: 2em;
 	overflow: hidden;
 	padding: 0;
 
+	max-height: 0;
 	transition: max-height 0.5s ease-in-out;
+
+	/* Font */
+	font-family: var(--header-font);
 }
 
 nav p.nav-arrow {
