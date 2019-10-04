@@ -50,7 +50,12 @@ p {
 
 a {
 	font-family: var(--paragraph-font);
+	color: var(--link-color);
 	padding-bottom: 1em;
+}
+
+a:hover {
+	color: var(--link-hover-color);
 }
 
 /*All text will have the same shadow in content*/
