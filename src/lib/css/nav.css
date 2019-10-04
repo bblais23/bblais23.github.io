@@ -122,5 +122,6 @@ nav p.nav-arrow span::after {
 
 /*Hide the ripple when the dropdown is open*/
 nav input[type="checkbox"]:checked ~ p.nav-arrow span::after {
+	display: none;
 	animation: none;
 }
