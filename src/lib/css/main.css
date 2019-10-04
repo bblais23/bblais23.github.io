@@ -43,7 +43,7 @@ body {
 			rgba(0, 0, 0, 0.6),
 			rgba(0, 0, 0, 0.6)
 		),
-		url('/lib/images/background.jpg') center / cover;
+		fixed url('/lib/images/background.jpg') center / cover;
 
 		/* Font */
 		font-family: Arial, Helvetica, sans-serif;
