@@ -36,6 +36,10 @@ h2 {
 	padding-bottom: 0.25em;
 }
 
+h3 {
+	font-size: 1.25em;
+}
+
 h1, h2, h3, h4 {
 	font-weight: normal;
 	font-family: var(--header-font);
@@ -49,9 +53,27 @@ p {
 }
 
 a {
+	display: inline-block;
 	font-family: var(--paragraph-font);
 	color: var(--link-color);
-	padding-bottom: 1em;
+}
+
+/* This creates an underline, 
+	 we are using the ::after pseudo-element to
+	 change its width and animate the link */
+a::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+
+	width: 0;
+	border-bottom: var(--text-border);
+	box-shadow: var(--text-shadow);
+}
+
+a:hover::after {
+	width: 100%;
+	transition: var(--transition-grow);
 }
 
 a:hover {

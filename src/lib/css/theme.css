@@ -67,4 +67,5 @@ body {
 
 	/*Animations and transitions*/
 	--animate-grow: growAnimate 1s ease-out 0.25s 1;
+	--transition-grow: width 0.5s ease-out 0.25s;
 }

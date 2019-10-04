@@ -79,7 +79,29 @@ main,
 	background-color: var(--main-background);
 }
 
+/* This creates an over/under line, 
+	 we are using the ::after/before pseudo-elements to
+	 change its width and animate the header */
+section:not(:last-of-type)::after {
+	/*make this element exist and display it as a block*/
+	content: '';
+	display: block;
+	margin-top: 1em;
+
+	/*Position the element*/
+
+	/*size (animated)*/
+	width: 100%;
+	animation: var(--animate-grow);
+
+	border-width: 1px;
+	border-style: solid;
+	border-bottom: none;
+	border-image: var(--section-gradient) 5;
+}
+
 section {
+	padding: 0 2em;
 	display: block;
 	clear: both;
 }
