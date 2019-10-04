@@ -44,6 +44,7 @@ header,
 
 .header h1 {
 	padding-bottom: 0;
+	padding-top: 0;
 	grid-area: name;
 	font-family: var(--name-font);
 	text-shadow: 0.1em 0.1em 0.3em var(--darken);
@@ -60,6 +61,7 @@ header,
 }
 
 .header h2 {
+	padding-top: 0;
 	grid-area: title;
 	font-family: var(--title-font);
 }
