@@ -61,6 +61,10 @@ nav p {
 	font-family: var(--header-font);
 }
 
+nav a {
+	font-family: var(--header-font);
+}
+
 nav p.nav-arrow {
 	max-height: unset;
 	overflow: visible;
