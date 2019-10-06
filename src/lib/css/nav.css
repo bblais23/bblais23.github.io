@@ -17,26 +17,46 @@
 	}
 }
 
+/* Link reset */
+nav a {
+	font-family: var(--header-font);
+	color: inherit;
+}
+nav a:hover {
+	color:unset;
+}
+nav a::after {
+	content: none;
+}
+
+/* Formating for the nav section make the grid */
 nav {
 	text-align: center;
 }
-
 nav label {
 	display: flex;
 	flex-direction: column-reverse;
 }
 
-nav input[type="checkbox"] {
-	opacity: 0;
-	height: 1px;
-	margin: 0;
+/* Style the links in the nav */
+nav p {
+	/* Layout */
+	line-height: 2em;
+	overflow: hidden;
 	padding: 0;
+
+	/* Animated fields */
+	max-height: 0;
+	transition: max-height 0.5s ease-in-out;
+
+	/* Font */
+	font-family: var(--header-font);
+}
+nav input[type="checkbox"]:checked ~ p {
+	max-height: 3em;
 }
 
-nav input[type="checkbox"]:checked::before {
-	transform: rotate(180deg);
-}
-
+/* Link divider is only visible when open */
 nav input[type="checkbox"]:checked ~ p:not(:last-of-type) {
 	border-width: 1px;
 	border-style: solid;
@@ -44,41 +64,11 @@ nav input[type="checkbox"]:checked ~ p:not(:last-of-type) {
 	border-image: var(--divider-gradient) 5;
 }
 
-nav input[type="checkbox"]:checked ~ p {
-	max-height: 3em;
-}
-
-nav p {
-	/* Layout */
-	line-height: 2em;
-	overflow: hidden;
-	padding: 0;
-
-	max-height: 0;
-	transition: max-height 0.5s ease-in-out;
-
-	/* Font */
-	font-family: var(--header-font);
-}
-
-nav a {
-	font-family: var(--header-font);
-	color: inherit;
-}
-
-nav a:hover {
-	color:unset;
-}
-
-nav a::after {
-	content: none;
-}
-
+/* Styling for the nav arrow */
 nav p.nav-arrow {
 	max-height: unset;
 	overflow: visible;
 }
-
 nav p.nav-arrow span {
 	/* Font */
 	font-size: 1.5em;
@@ -93,17 +83,26 @@ nav p.nav-arrow span {
 	transform: rotate(0deg);
 	transition: transform 0.1s linear;
 }
-
-/* Rotate the nav arrow when we open the dropdown */
 nav input[type="checkbox"]:checked ~ p.nav-arrow span {
+	/* Rotate the nav arrow when we open the dropdown */
 	transform: rotate(180deg);
 }
 
-/* Focus for the nav checkbox */
+/* checkbox is invisible but still selectable by keyboard navigation.
+	 when the checkbox is selected it will highlight the dropdown
+	 arrow 
+*/
+nav input[type="checkbox"] {
+	opacity: 0;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
 nav input[type="checkbox"]:focus ~ p.nav-arrow {
 	outline: var(--outline);
 }
 
+/* Animate ripple for nav arrow */
 nav p.nav-arrow span::after {
 	content: '';
 
@@ -128,9 +127,8 @@ nav p.nav-arrow span::after {
 	border-radius: 0.75em;
 	box-shadow: 0 0 0.1em 0.2em var(--lighten);
 }
-
-/*Hide the ripple when the dropdown is open*/
 nav input[type="checkbox"]:checked ~ p.nav-arrow span::after {
+	/*Hide the ripple when the dropdown is open*/
 	display: none;
 	animation: none;
 }
