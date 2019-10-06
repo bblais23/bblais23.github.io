@@ -38,6 +38,7 @@ header,
 .header .logo {
 	grid-area: logo;
 	height: 6em;
+	width: 6em;
 	filter: drop-shadow(var(--text-shadow));
 	fill: var(--color);
 }
