@@ -63,13 +63,14 @@ nav p {
 
 nav a {
 	font-family: var(--header-font);
+	color: inherit;
 }
 
 nav a:hover {
 	color:unset;
 }
 
-nav a:hover::after {
+nav a::after {
 	content: none;
 }
 
