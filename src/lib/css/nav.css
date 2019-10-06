@@ -132,3 +132,57 @@ nav input[type="checkbox"]:checked ~ p.nav-arrow span::after {
 	display: none;
 	animation: none;
 }
+
+
+@media (min-width: 768px) {
+
+	/* Hide the nav arrow, ripple, dividers and fully hide the checkbox */
+	nav p.nav-arrow {
+		display: none;
+	}
+	nav input[type="checkbox"]:checked ~ p:not(:last-of-type) {
+		border: none;
+	}
+	nav input[type="checkbox"] {
+		display: none;
+	}
+	nav p.nav-arrow span::after {
+		display: none;
+		animation: none;
+	}
+
+	/* Links are visible */
+	nav p {
+		max-height: unset;
+
+		padding-right: 1em;
+	}
+
+	/* Links are horizontal */
+	nav label {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+
+		/* Some spacing above */
+		padding: 1em 1em 1em 0;
+	}
+
+	/* Links have an animated underline for hover */
+	nav p a::after {
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 0;
+		
+		border-width: 1px;
+		border-style: solid;
+		border-bottom: none;
+		border-left: none;
+		border-image: var(--divider-gradient) 5;
+	}
+
+	nav p a:hover::after {
+		width: 100%;
+		transition: var(--transition-grow);
+	}
+}
