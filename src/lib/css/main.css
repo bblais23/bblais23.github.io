@@ -22,7 +22,7 @@ a:active {
 }
 
 /* Set font size */
-body {
+html {
 	font-size: 16pt;
 }
 
@@ -72,7 +72,7 @@ main,
 main,
 .main {
 	max-width: 50em;
-	padding: 2em;
+	padding: 1em;
 	justify-self: center;
 	color: var(--color);
 	background-color: var(--main-background);
@@ -96,11 +96,13 @@ section:not(:last-of-type)::after {
 	border-width: 1px;
 	border-style: solid;
 	border-bottom: none;
+	border-left: none;
+	border-right: none;
 	border-image: var(--section-gradient) 5;
 }
 
 section {
-	padding: 0 2em;
+	padding: 0;
 	display: block;
 	clear: both;
 }
@@ -111,6 +113,6 @@ section::after {
 
 img.thumbnail {
 	float: left;
-	width: 7em;
+	width: 5em;
 	padding: 0.5em;
 }
