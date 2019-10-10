@@ -3,3 +3,20 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  */
+
+footer,
+.footer {
+	background: var(--footer-background);
+	font-size: 0.7rem;
+	padding: 2em;
+}
+
+footer img,
+.footer img {
+	width: 3em;
+}
+
+footer p,
+.footer p {
+	padding-bottom: 0.25em;
+}

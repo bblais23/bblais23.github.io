@@ -21,6 +21,7 @@ body {
 	/* Colors */
 	--white: #BBB;
 	--black: #000;
+	--dark-grey: #282829;
 	--yellow: rgb(223, 184, 10);
 	--blue: rgba(14, 96, 121, 0.75);
 	--light-blue: rgba(24, 169, 212, 0.75);
@@ -32,7 +33,6 @@ body {
 	--link-color: var(--light-blue);
 	--link-hover-color: var(--white);
 	--accent-color: var(--blue);
-	--header-color: var(--yellow);
 	--header-text: var(--black);
 
 	/* Gradients */
@@ -59,8 +59,10 @@ body {
 	--name-font: 'Michael', Arial, Helvetica, sans-serif;
 	--title-font: 'Cormorant Upright Light', cursive;
 
+	/* Backgrounds */
 	--main-background: var(--darken);
-
+	--header-background: var(--yellow);
+	--footer-background: var(--dark-grey);
 	--text-border: 0.05em solid var(--color);
 
 	--outline: var(--accent-color) dashed 0.1em;
