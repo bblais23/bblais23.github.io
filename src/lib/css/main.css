@@ -49,18 +49,19 @@ body {
 		),
 		fixed url('/lib/images/background.jpg') center / cover;
 
-		/* Font */
-		font-family: Arial, Helvetica, sans-serif;
+		/* Set the font color */
+		color: var(--color);
 }
 
 /* Make body grid */
 body {
 	display: grid;
-	grid-template-rows: auto 1fr;
-	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
 	grid-template-areas: 
-		"nav nav"
-		"main main";
+		"nav"
+		"main"
+		"footer";
 }
 
 /* Define grid area */
@@ -72,6 +73,10 @@ main,
 .main {
 	grid-area: main;
 }
+footer,
+.footer {
+	grid-area: footer;
+}
 
 /* Main area styling */
 main,
@@ -79,7 +84,6 @@ main,
 	max-width: 50em;
 	padding: 1em;
 	justify-self: center;
-	color: var(--color);
 	background-color: var(--main-background);
 }
 
