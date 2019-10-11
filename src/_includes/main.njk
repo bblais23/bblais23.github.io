@@ -26,12 +26,12 @@
 	<link rel="stylesheet" type="text/css" href="/lib/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="/lib/css/accessability.css">
 
-	<title>Ben Blais - Software Engineer</title>
+	<title>Benjamin Blais - Software Engineer</title>
  </head>
  <body>
 	<header class="header">
 		<p class="skip-to-main"><a href="#main-content">Skip to Main Content</a></p>
-		<svg viewBox="0 0 260 250" class="logo" >
+		<svg viewBox="0 0 260 250" class="logo" role="img">
 			<title it="atBenTitle">Ben Blais Logo</title>
 			<desc id="atBenDesc">The letter 'B' stylized to look like an at sign</desc>
 			<use xlink:href="/lib/images/BenWeb_logo.svg#atben"></use>
@@ -42,6 +42,7 @@
 			<label>
 				<input aria-label="Open Navigation" tabindex="0" type="checkbox">
 				<p class="nav-arrow"><span aria-label="Nav Button" aria-hidden="true" role="image">⮛</span></p>
+				<p><a href="https://blog.benblais.com" target="_blank">Blog</a></p>
 				<p><a href="/projects">Projects</a></p>
 				<p><a href="/uses">Gear</a></p>
 				<p><a href="/">About Ben</a></p>
@@ -51,10 +52,25 @@
 	<main id="main-content" class="main">{{content | safe}}</main>
 	<footer class="footer">
 		<p>&copy; 2020 Benjamin Blais</p>
+
+		<!-- Social Icons -->
+		<p>
+			<a class="social-badge" href="https://twitter.com/benblais" target="_blank">
+				<svg viewBox="0 0 24 24" role="img">
+					<title>Ben Blais on twitter</title>
+					<use xlink:href="/lib/images/twitter.svg#twitter"></use>
+				</svg>
+			</a>
+			<a class="social-badge" href="https://github.com/bblais23" target="_blank">
+				<svg viewBox="0 0 24 24" role="img">
+					<title>Ben Blais on GitHub</title>
+					<use xlink:href="/lib/images/github.svg#github"></use>
+				</svg>
+			</a>
+		</p>
 		<p>
 			Source code Licensed under the 
-			<a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a> (the "License");
-			you may not use this except in compliance with the License.
+			<a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a>
 		</p>
 		<p>
 			Michael Font (header) is licenced under the 

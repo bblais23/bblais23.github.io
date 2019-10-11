@@ -7,16 +7,47 @@
 footer,
 .footer {
 	background: var(--footer-background);
+
+	/* Footer has a smaller font than the rest of the page */
 	font-size: 0.7rem;
+
+	/* Keep some space around the footer.*/
 	padding: 2em;
 }
 
+/* Image sizing */
 footer img,
-.footer img {
-	width: 3em;
+.footer img,
+footer svg,
+.footer svg {
+	padding: 0.25em;
+	width: 2em;
+	height: 2em;
 }
 
+/* Any icons will be filled with the color */
+footer svg,
+.footer svg {
+	fill: var(--color);
+}
+
+.footer .social-badge::after {
+	content: none;
+}
+
+.footer a.social-badge:hover svg {
+	fill: var(--blue)
+}
+
+/* Smoosh the footer text closer together*/
 footer p,
 .footer p {
 	padding-bottom: 0.25em;
+}
+
+@media (min-width: 1280px) {
+	footer,
+	.footer {
+		text-align: center;
+	}
 }
