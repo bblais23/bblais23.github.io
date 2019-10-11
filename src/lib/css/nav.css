@@ -80,12 +80,12 @@ nav p.nav-arrow span {
 	height: 1.5em;
 	width: 1.5em;
 
-	transform: rotate(0deg);
+	transform: rotate(90deg);
 	transition: transform 0.1s linear;
 }
 nav input[type="checkbox"]:checked ~ p.nav-arrow span {
 	/* Rotate the nav arrow when we open the dropdown */
-	transform: rotate(180deg);
+	transform: rotate(-90deg);
 }
 
 /* checkbox is invisible but still selectable by keyboard navigation.
