@@ -131,4 +131,9 @@ img.thumbnail {
 	html {
 		font-size: 18pt;
 	}
+
+	main,
+	.main {
+		backdrop-filter: blur(0.5em);
+	}
 }
