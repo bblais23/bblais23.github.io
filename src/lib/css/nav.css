@@ -43,7 +43,7 @@ nav p {
 	/* Layout */
 	line-height: 2em;
 	overflow: hidden;
-	padding: 0;
+	padding: 0.25em;
 
 	/* Animated fields */
 	max-height: 0;
