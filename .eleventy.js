@@ -10,6 +10,7 @@ module.exports = {
 			"jpg",
 			"png",
 			"gif",
+			"ico",
 			"svg",
 			"njk",
 			"ttf",
