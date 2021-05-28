@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bblais
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://benblais.dev
+  * I am bblais (https://keybase.io/bblais) on keybase.
+  * I have a public key ASAfZpqvVz1E4WxqpCa1OHW4k-q0tpZwxdIbecIfzkCO0Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201f669aaf573d44e16c6aa426b53875b893eab4b69670c5d21b79c21fce408ed00a",
+      "host": "keybase.io",
+      "kid": "01201f669aaf573d44e16c6aa426b53875b893eab4b69670c5d21b79c21fce408ed00a",
+      "uid": "0dc9319c67c02e03787454f12e5e9a19",
+      "username": "bblais"
+    },
+    "merkle_root": {
+      "ctime": 1583628151,
+      "hash": "cb1694c3a35095880929e3871798d6cc067ec5bc7c260d6eb8db78b3450a586f49eb4bb3588f9681f33b8a9db6b0a771076f8f8ebb513e4f6ef7721958a61ece",
+      "hash_meta": "75bfce831acdeb65ee72e8582c568ee1d771de0149553d8a284eab6953ebb1fe",
+      "seqno": 15164833
+    },
+    "service": {
+      "entropy": "sK2Ki9zDcvFey7RfQu6aPOXP",
+      "hostname": "benblais.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.1"
+  },
+  "ctime": 1583628164,
+  "expire_in": 504576000,
+  "prev": "b90bd26c0784e472e6945468a28fc503c1008c69276e54daec085939a09b9188",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgH2aar1c9ROFsaqQmtTh1uJPqtLaWcMXSG3nCH85AjtAKp3BheWxvYWTESpcCCsQguQvSbAeE5HLmlFRooo/FA8EAjGknblTa7AhZOaCbkYjEIFxa5MKe9gRVXVXEUHcv4A9xp1qM+vjM9CEvBuybFHj4AgHCo3NpZ8RAO3CikfJrcUSb+BrCjm58XJBNbBrP4qWq7ApDZwGfbqf/7Cnw/3Rj8ggWAjYbPO7dm80U/m2Rj0X9eMngRUCkA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIE2zm+HDzryFCI5MDRT3fQ1cJUIo3pfSuC4TmxO/565Mo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bblais
+
+==================================================================
